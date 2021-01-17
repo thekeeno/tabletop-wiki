@@ -189,6 +189,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/.giffmex/buttons/newnote-datetime</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
@@ -269,6 +271,8 @@ Error message and password prompt
 
 <li>$:/state/search-list/selected-item--874113614</li>
 
+<li>$:/state/search/currentTab</li>
+
 <li>$:/state/tab--1498284803</li>
 
 <li>$:/state/tab--1963855381</li>
@@ -278,6 +282,8 @@ Error message and password prompt
 <li>$:/state/tab-2065006209</li>
 
 <li>$:/state/tab/moresidebar-1850697562</li>
+
+<li>$:/state/tab/search-results/sidebar</li>
 
 <li>$:/state/tab/sidebar--595412856</li>
 
@@ -662,7 +668,7 @@ Click here: {{$:/core/ui/Buttons/palette}}
 
 &lt;/span&gt;</pre>
 </div>
-<div caption="search results in context" created="20200102141715979" modified="20200304195344624" tags="tb refs" title="$:/.giffmex/ViewTemplate/refscontext">
+<div caption="search results in context" created="20200102141715979" creator="orr" modified="20210117170512951" modifier="orr" tags="refs tb" title="$:/.giffmex/ViewTemplate/refscontext">
 <pre>\define mycrit() (?i)\b$(searchspx)$\b
 
 &lt;hr&gt;References: 
@@ -673,7 +679,7 @@ Click here: {{$:/core/ui/Buttons/palette}}
 &lt;/$vars&gt;
 </pre>
 </div>
-<div caption="links" created="20200126143031898" modified="20200304195352126" tags="tb refs $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refslinks">
+<div caption="links" created="20200126143031898" creator="orr" modified="20210117170600208" modifier="orr" tags="refs tb $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refslinks">
 <pre>\define mycrit() (?i)\b$(searchspx)$\b
 
 &lt;hr&gt;References: 
@@ -681,10 +687,9 @@ Click here: {{$:/core/ui/Buttons/palette}}
 &lt;$vars searchme=&lt;&lt;currentTiddler&gt;&gt; searchspx={{{ [&lt;currentTiddler&gt;escaperegexp[]]}}} &gt;
 
 &lt;$list filter=&quot;[!is[system]all[current]backlinks[]!tag[hide]sort[title]] -[is[current]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;br&gt;&lt;/$list&gt;
-&lt;/$vars&gt;
-</pre>
+&lt;/$vars&gt;</pre>
 </div>
-<div caption="simple transclusion" created="20200126142157739" modified="20200304195401578" tags="tb refs" title="$:/.giffmex/ViewTemplate/refstranscludeclean">
+<div caption="simple transclusion" created="20200126142157739" creator="orr" modified="20210117170509310" modifier="orr" tags="refs tb" title="$:/.giffmex/ViewTemplate/refstranscludeclean">
 <pre>&lt;hr&gt;
 
 References: &lt;br&gt;
@@ -855,6 +860,9 @@ placeholder=&quot;$placeholder$&quot;/&gt;
 <div created="20210117164839851" creator="orr" modified="20210117164839851" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/.giffmex/buttons/newnote-datetime">
 <pre>hide</pre>
 </div>
+<div created="20210117170420191" creator="orr" modified="20210117170420191" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
+<pre>show</pre>
+</div>
 <div created="20210117133302295" creator="orr" modified="20210117164841809" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
 <pre>hide</pre>
 </div>
@@ -876,7 +884,7 @@ placeholder=&quot;$placeholder$&quot;/&gt;
 <div created="20210117164821688" creator="orr" modified="20210117164821688" modifier="orr" title="$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/ViewToolbar/new-note-here-datetime">
 <pre>hide</pre>
 </div>
-<div created="20210117164822788" creator="orr" modified="20210117164822788" modifier="orr" title="$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/viewtoolbar/viewrefs">
+<div created="20210117164822788" creator="orr" modified="20210117171044403" modifier="orr" title="$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/viewtoolbar/viewrefs">
 <pre>hide</pre>
 </div>
 <div created="20200210145131741" modified="20200304195613549" tags="tb" title="$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/ViewToolbar/viewrefscheckboxes">
@@ -11920,6 +11928,9 @@ exports.context = contextWidget;
 <div created="20210117133111238" creator="orr" modified="20210117133111238" modifier="orr" title="$:/state/search-list/selected-item--874113614">
 <pre>Magman-primaryList</pre>
 </div>
+<div created="20210117171056160" creator="orr" modified="20210117171057344" modifier="orr" title="$:/state/search/currentTab">
+<pre>$:/core/ui/DefaultSearchResultList</pre>
+</div>
 <div created="20210117131849575" creator="orr" modified="20210117131849576" modifier="orr" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
@@ -11932,14 +11943,17 @@ exports.context = contextWidget;
 <div created="20210117123101494" creator="orr" modified="20210117133619215" modifier="orr" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20210117123653513" creator="orr" modified="20210117165805091" modifier="orr" title="$:/state/tab/moresidebar-1850697562">
+<div created="20210117123653513" creator="orr" modified="20210117171117469" modifier="orr" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20210117123652517" creator="orr" modified="20210117163924087" modifier="orr" title="$:/state/tab/sidebar--595412856">
+<div created="20210117171056161" creator="orr" modified="20210117171057346" modifier="orr" title="$:/state/tab/search-results/sidebar">
+<pre>$:/core/ui/DefaultSearchResultList</pre>
+</div>
+<div created="20210117123652517" creator="orr" modified="20210117171115473" modifier="orr" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20210117164605158" creator="orr" modified="20210117164828968" modifier="orr" title="$:/state/tabs/controlpanel/toolbars-1345989671">
-<pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
+<div created="20210117164605158" creator="orr" modified="20210117171043085" modifier="orr" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
@@ -11947,7 +11961,7 @@ exports.context = contextWidget;
 <div created="20210117131817587" creator="p" modified="20210117131819154" modifier="or" title="$:/status/UserName">
 <pre>orr</pre>
 </div>
-<div created="20210117164545195" creator="orr" list="[[Burning Crow]] [[Captain Asha]] [[Romana Backstory]] [[Grunt: Bodyguard]] [[Arasaka ChemTech Factory 16b]]" modified="20210117165601537" modifier="orr" title="$:/StoryList">
+<div created="20210117164545195" creator="orr" list="" modified="20210117171125253" modifier="orr" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200304200339220" tags="tb" title="$:/tags/EditToolbar">
@@ -12270,14 +12284,14 @@ Success on each control node will unlock the physical control panels, and also s
 <div created="20210117162402984" creator="orr" modified="20210117165104157" modifier="orr" tags="Cyberpunk" title="Biotechnica Factory">
 <pre>This place blew up and spilled [[BZF1]] everywhere.</pre>
 </div>
-<div created="20210117165535616" creator="orr" modified="20210117165720541" modifier="orr" tags="Vehicle D&amp;D Brescia" title="Burning Crow">
-<pre>Romana's old ship. Captained by [[Captain Asha]]. Sunk by explosion.</pre>
+<div created="20210117165535616" creator="orr" modified="20210117165926693" modifier="orr" tags="Vehicle D&amp;D Brescia" title="Burning Crow">
+<pre>[[Romana]]'s old ship. Captained by [[Captain Asha]]. Sunk by explosion.</pre>
 </div>
 <div created="20210117162425848" creator="orr" modified="20210117165104159" modifier="orr" tags="Cyberpunk" title="BZF1">
 <pre>Nasty Chemical.</pre>
 </div>
-<div created="20210117165610785" creator="orr" modified="20210117165836506" modifier="orr" tags="NPC Brescia D&amp;D" title="Captain Asha">
-<pre>A solemn but charismatic man from across the sea, who was running what seemed to be a protection racket. </pre>
+<div created="20210117165610785" creator="orr" modified="20210117165943727" modifier="orr" tags="NPC Brescia D&amp;D" title="Captain Asha">
+<pre>A solemn but charismatic man from across the sea, who was running what seemed to be a protection racket. Captain of the [[Burning Crow]]. Presumed deceased.</pre>
 </div>
 <div created="20210117133005495" creator="orr" modified="20210117165104160" modifier="orr" tags="NPC Cyberpunk" title="Deckor">
 <pre>French. Shitty stubble. 
@@ -12350,7 +12364,7 @@ Paul is here to get paid and move on. Treats the party like a hassle - they're j
 His car - basically a hovering Volvo 240 with some serious speed behind it. Boxy but capacious. 
 [img[./img/paul-amsel-car.jpg]]</pre>
 </div>
-<div created="20210117122957739" modified="20210117165104166" modifier="orr" tags="Cyberpunk" title="Romana">
+<div created="20210117122957739" creator="orr" modified="20210117165915928" modifier="orr" tags="Brescia D&amp;D PC" title="Romana">
 <pre></pre>
 </div>
 <div created="20210117165214149" creator="orr" modified="20210117165639852" modifier="orr" tags="Journal D&amp;D Brescia" title="Romana Backstory">
