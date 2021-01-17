@@ -187,7 +187,11 @@ Error message and password prompt
 
 <li>$:/config/NewJournal/Title</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/.giffmex/buttons/newnote-datetime</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/palette</li>
 
@@ -195,7 +199,15 @@ Error message and password prompt
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/ViewToolbar/new-note-here</li>
+
+<li>$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/ViewToolbar/new-note-here-datetime</li>
+
+<li>$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/viewtoolbar/viewrefs</li>
+
 <li>$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/ViewToolbar/viewrefscheckboxes</li>
+
+<li>$:/config/ViewToolbarButtons/Visibility/$:/jd/fullscreen-editor/EditButton</li>
 
 <li>$:/core</li>
 
@@ -830,19 +842,37 @@ placeholder=&quot;$placeholder$&quot;/&gt;
 <div created="20191225174624729" modified="20200304195553439" tags="tb" title="$:/config/NewJournal/Title">
 <pre>YYYY-0MM / 0DD / 0hh:0mm:0ss /</pre>
 </div>
-<div created="20210117133302295" creator="orr" modified="20210117133302295" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
+<div created="20210117164839851" creator="orr" modified="20210117164839851" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/.giffmex/buttons/newnote-datetime">
+<pre>hide</pre>
+</div>
+<div created="20210117133302295" creator="orr" modified="20210117164841809" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
+<pre>hide</pre>
+</div>
+<div created="20210117164849340" creator="orr" modified="20210117164906055" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>show</pre>
 </div>
-<div created="20210117133308958" creator="orr" modified="20210117133308958" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/palette">
-<pre>show</pre>
+<div created="20210117133308958" creator="orr" modified="20210117164845539" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/palette">
+<pre>hide</pre>
 </div>
-<div created="20210117133310228" creator="orr" modified="20210117133310228" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/theme">
-<pre>show</pre>
+<div created="20210117133310228" creator="orr" modified="20210117164844874" modifier="orr" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/theme">
+<pre>hide</pre>
 </div>
 <div created="20200106214031452" modified="20200304195600676" tags="tb" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
+<div created="20210117164824244" creator="orr" modified="20210117164824244" modifier="orr" title="$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/ViewToolbar/new-note-here">
+<pre>hide</pre>
+</div>
+<div created="20210117164821688" creator="orr" modified="20210117164821688" modifier="orr" title="$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/ViewToolbar/new-note-here-datetime">
+<pre>hide</pre>
+</div>
+<div created="20210117164822788" creator="orr" modified="20210117164822788" modifier="orr" title="$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/viewtoolbar/viewrefs">
+<pre>hide</pre>
+</div>
 <div created="20200210145131741" modified="20200304195613549" tags="tb" title="$:/config/ViewToolbarButtons/Visibility/$:/.giffmex/ViewToolbar/viewrefscheckboxes">
+<pre>hide</pre>
+</div>
+<div created="20210117164811910" creator="orr" modified="20210117164811910" modifier="orr" title="$:/config/ViewToolbarButtons/Visibility/$:/jd/fullscreen-editor/EditButton">
 <pre>hide</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.23">
@@ -11895,8 +11925,8 @@ exports.context = contextWidget;
 <div created="20210117123652517" creator="orr" modified="20210117163924087" modifier="orr" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20210117164605158" creator="orr" modified="20210117164607486" modifier="orr" title="$:/state/tabs/controlpanel/toolbars-1345989671">
-<pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
+<div created="20210117164605158" creator="orr" modified="20210117164828968" modifier="orr" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
@@ -11904,13 +11934,13 @@ exports.context = contextWidget;
 <div created="20210117131817587" creator="p" modified="20210117131819154" modifier="or" title="$:/status/UserName">
 <pre>orr</pre>
 </div>
-<div created="20210117164545195" creator="orr" list="[[Architecture: Factory 16b Exec PC]] [[Arasaka ChemTech Factory 16b]]" modified="20210117164614939" modifier="orr" title="$:/StoryList">
+<div created="20210117164545195" creator="orr" list="[[Architecture: Factory 16b Exec PC]] [[Arasaka ChemTech Factory 16b]]" modified="20210117164804345" modifier="orr" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200304200339220" tags="tb" title="$:/tags/EditToolbar">
 <pre></pre>
 </div>
-<div created="20200127183739219" list="$:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler $:/.giffmex/buttons/newnote-datetime $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20200304200346297" tags="tb" title="$:/tags/PageControls">
+<div created="20200127183739219" creator="orr" list="$:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler $:/.giffmex/buttons/newnote-datetime $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20210117164857100" modifier="orr" tags="tb" title="$:/tags/PageControls">
 <pre></pre>
 </div>
 <div created="20200128153730498" list="$:/core/ui/ViewTemplate/title $:/core/ui/ViewTemplate/unfold $:/core/ui/ViewTemplate/subtitle $:/core/ui/ViewTemplate/tags $:/core/ui/ViewTemplate/classic $:/core/ui/ViewTemplate/body $:/.giffmex/ViewTemplate/viewfullnotes $:/.giffmex/ViewTemplate/refscontext $:/.giffmex/ViewTemplate/refslinks $:/.giffmex/ViewTemplate/refstranscludecollapse" modified="20200304200353810" tags="tb" title="$:/tags/ViewTemplate">
