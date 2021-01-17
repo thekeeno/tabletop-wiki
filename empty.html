@@ -351,6 +351,8 @@ Error message and password prompt
 
 <li>Captain Asha</li>
 
+<li>Cyberpunk Red Grunts</li>
+
 <li>Deckor</li>
 
 <li>Deep Blue Chess Club</li>
@@ -370,6 +372,14 @@ Error message and password prompt
 <li>Grunt: Arasaka Trolley Drone</li>
 
 <li>Grunt: Bodyguard</li>
+
+<li>Grunt: Boosterganger</li>
+
+<li>Grunt: Netrunner</li>
+
+<li>Grunt: Road Ganger</li>
+
+<li>Grunt: Security Operative</li>
 
 <li>HK</li>
 
@@ -11919,8 +11929,8 @@ exports.context = contextWidget;
 <div created="20210117135916508" creator="orr" modified="20210117173147101" modifier="orr" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
-<div created="20210117123058248" creator="orr" modified="20210117214505243" modifier="orr" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210117123058248" creator="orr" modified="20210117222102751" modifier="orr" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20210117123101494" creator="orr" modified="20210117133619215" modifier="orr" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -11931,8 +11941,8 @@ exports.context = contextWidget;
 <div created="20210117171056161" creator="orr" modified="20210117171057346" modifier="orr" title="$:/state/tab/search-results/sidebar">
 <pre>$:/core/ui/DefaultSearchResultList</pre>
 </div>
-<div created="20210117123652517" creator="orr" modified="20210117185003376" modifier="orr" title="$:/state/tab/sidebar--595412856">
-<pre>$:/.giffmex/sidebar/tabs/tiddlyblinkcontrols</pre>
+<div created="20210117123652517" creator="orr" modified="20210117215243584" modifier="orr" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20210117164605158" creator="orr" modified="20210117171043085" modifier="orr" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -11943,7 +11953,7 @@ exports.context = contextWidget;
 <div created="20210117131817587" creator="p" modified="20210117131819154" modifier="or" title="$:/status/UserName">
 <pre>orr</pre>
 </div>
-<div created="20210117213003703" creator="orr" list="" modified="20210117214623978" modifier="orr" title="$:/StoryList">
+<div created="20210117215247878" creator="orr" list="[[Cyberpunk Red Grunts]]" modified="20210117222100752" modifier="orr" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200304200339220" tags="tb" title="$:/tags/EditToolbar">
@@ -12307,6 +12317,18 @@ Success on each control node will unlock the physical control panels, and also s
 <div created="20210117165610785" creator="orr" modified="20210117165943727" modifier="orr" tags="NPC Brescia D&amp;D" title="Captain Asha">
 <pre>A solemn but charismatic man from across the sea, who was running what seemed to be a protection racket. Captain of the [[Burning Crow]]. Presumed deceased.</pre>
 </div>
+<div created="20210117221624803" creator="orr" modified="20210117222018878" modifier="orr" tags="Cyberpunk [[Cyberpunk Red]]" title="Cyberpunk Red Grunts">
+<pre>NPC Statblocks taken from the Cyberpunk Red Core Rulebook.
+
+Mooks:
+&lt;&lt;list-links &quot;[tag[Mook]]&quot;&gt;&gt;
+Lieutenants:
+&lt;&lt;list-links &quot;[tag[Lieutenant]]&quot;&gt;&gt;
+Minibosses:
+&lt;&lt;list-links &quot;[tag[MiniBoss]]&quot;&gt;&gt;
+Boss:
+&lt;&lt;list-links &quot;[tag[Boss]]&quot;&gt;&gt;</pre>
+</div>
 <div created="20210117133005495" creator="orr" modified="20210117165104160" modifier="orr" tags="NPC Cyberpunk" title="Deckor">
 <pre>French. Shitty stubble. 
 Personality: much more cautious than [[Magman]]. Almost cowardly, and will hide behind him but also try to guide him like a pet. Somewhat of a tactician. He’s tiny and frail and stutters.
@@ -12396,7 +12418,7 @@ Mesh Network: If another drone has eyes on a target, you get +2 on all Ranged We
 
 Target must make a DV13 Athletics check or be hit. On a hit, target takes 3d6 damage and the drone takes half this. </pre>
 </div>
-<div created="20210117163102583" creator="orr" modified="20210117173150391" modifier="orr" tags="Grunt Cyberpunk" title="Grunt: Bodyguard">
+<div created="20210117163102583" creator="orr" modified="20210117221511653" modifier="orr" tags="Grunt Cyberpunk Mook" title="Grunt: Bodyguard">
 <pre>|INT|REF|DEX|TECH|COOL|WILL|LUCK|MOVE|BODY|EMP|
 |3|6|5|2|4|4|-|4|6|3|
 
@@ -12404,13 +12426,13 @@ Target must make a DV13 Athletics check or be hit. On a hit, target takes 3d6 da
 |Seriously Wounded|18|
 |Death Save|6|
 
-|Kevlar|~|
+|Kevlar|&lt;|
 |Head|SP7|
 |Body|SP7|
 
 |Weapons|Damage|ROF|
 |Poor Quality Shotgun|5d6|1|
-|Very Heavy Pistol|4d6|2|
+|Very Heavy Pistol|4d6|1|
 
 !!! Skill Bases
 
@@ -12423,6 +12445,123 @@ None.
 !!!Equipment
 
 Slug Ammo x25, Very Heavy Pistol Ammo x25, Radio Communicator</pre>
+</div>
+<div created="20210117215351637" creator="orr" modified="20210117221606751" modifier="orr" tags="Grunt Cyberpunk Mook" title="Grunt: Boosterganger">
+<pre>|INT|REF|DEX|TECH|COOL|WILL|LUCK|MOVE|BODY|EMP|
+|2|6|5|2|4|2|-|4|4|3|
+
+|Hit Points|20|
+|Seriously Wounded|10|
+|Death Save|4|
+
+|Leathers|&lt;|
+|Head|SP4|
+|Body|SP4|
+
+|Weapons|Damage|ROF|
+|Poor Quality VH Pistol|4d6|1|
+|Rippers|2d6|2|
+
+!!! Skill Bases
+
+Athletics 9, Brawling 9, Conceal/Reveal Object 4, Concentration 4, Conversation 5, Drive Land Vehicle 10, Education 4, Endurance 6, Evasion 7, First Aid 4, Handgun 12, Human Perception 5, Interrogation 6, Language (Native) 4, Language (Streetslang) 4, Local Expert (Your Home) 4, Melee Weapon 11, Perception 6, Persuasion 6, Resist Torture/Drugs 4, Stealth 7
+
+!!!Cyberware
+
+Rippers, Techhair
+
+!!!Equipment
+
+VH Pistol Ammo x30, Disposable Cellphone</pre>
+</div>
+<div created="20210117220922679" creator="orr" modified="20210117221458413" modifier="orr" tags="Grunt Cyberpunk Lieutenant" title="Grunt: Netrunner">
+<pre>|INT|REF|DEX|TECH|COOL|WILL|LUCK|MOVE|BODY|EMP|
+|7|5|4|7|4|5|-|5|3|4|
+
+|Hit Points|30|
+|Seriously Wounded|15|
+|Death Save|3|
+
+|Bodyweight Suit|&lt;|
+|Head|SP11|
+|Body|SP11|
+
+|Weapons|Damage|ROF|
+|Very Heavy Pistol|4d6|1|
+
+!!! Skill Bases
+
+''Interface 4'', Athletics 9, Basic Tech 13, Brawling 6, Conceal/Reveal Object 11, Concentration 9, Conversation 6, Cryptography 11, Deduction 11, Education 11, Electronics/Security Tech 11, Evasion 6, First Aid 9, Forgery 13, Handgun 10, Human Perception 6, Language (Native) 9, Language (Streetslang) 9, Local Expert (Your Home) 13, Library Search 9, Perception 11, Persuasion 6, Pick Lock 11, Resist Torture/Drugs 7, Stealth 8
+
+!!! Cyberware
+
+Neural Link (Interface Plugs)
+
+!!!Equipment
+
+VH Pistol Ammo x50, Flashlight, Virtuality Goggles
+
+!!! Cyberdeck Programs
+
+Banhammer, DeckKRASH, Eraser, Hellbolt, Shield, Sword, Worm</pre>
+</div>
+<div created="20210117220046350" creator="orr" modified="20210117221532566" modifier="orr" tags="Grunt Cyberpunk Mook" title="Grunt: Road Ganger">
+<pre>|INT|REF|DEX|TECH|COOL|WILL|LUCK|MOVE|BODY|EMP|
+|4|6|4|4|3|3|-|3|3|3|
+
+|Hit Points|25|
+|Seriously Wounded|13|
+|Death Save|3|
+
+|Kevlar|&lt;|
+|Head|SP4|
+|Body|SP4|
+
+|Weapons|Damage|ROF|
+|Croossbow|4d6|1|
+|Very Heavy Pistol|4d6|1|
+|Light Melee Weapon|1d6|2|
+
+!!! Skill Bases
+
+Archery 10, Athletics 10, Brawling 6, Concentration 5, Conversation 6, Drive Land Vehicle 12, Education 6, Endurance 5, Evasion 6, First Aid 6, Handgun 10, Human Perception 5, Land Vehicle Tech 10, Language (Native) 6, Language (Streetslang) 6, Local Expert (Your Home) 6, Melee Weapon 8, Perception 6, Persuasion 5, Stealth 8, Tracking 8, Wilderness Survival 8
+
+!!!Cyberware
+
+Neural Link (Interface Plugs)
+
+!!!Equipment
+
+VH Pistol Ammo x20, Arrow Ammo x20, Rope, Flashlight</pre>
+</div>
+<div created="20210117220618645" creator="orr" modified="20210117221609737" modifier="orr" tags="Grunt Cyberpunk Mook" title="Grunt: Security Operative">
+<pre>|INT|REF|DEX|TECH|COOL|WILL|LUCK|MOVE|BODY|EMP|
+|3|7|4|2|2|3|-|3|5|3|
+
+|Hit Points|30|
+|Seriously Wounded|15|
+|Death Save|5|
+
+|Kevlar|&lt;|
+|Head|SP7|
+|Body|SP7|
+
+|Weapons|Damage|ROF|
+|Poor Quality Assault Rifle|5d6|1|
+|Very Heavy Pistol|4d6|1|
+|Medium Melee Weapon|2d6|2|
+
+!!! Skill Bases
+
+Athletics 8, Autofire 10, Brawling 6, Concentration 7, Conversation 5, Education 5, Evasion 6, First Aid 4, Handgun 10, Human Perception 5, Interrogation 6, Language (Native) 5, Language (Streetslang) 5, Local Expert (Your Home) 5, Melee Weapon 6, Perception 5, Persuasion 4, Resist Torture/Drugs 5, Shoulder Arms 10, Stealth 6
+
+!!!Cyberware
+
+None.
+
+!!!Equipment
+
+Rifle x40, VH Pistol Ammo x20, Radio Communicator</pre>
 </div>
 <div created="20210117214309076" creator="orr" modified="20210117214337086" modifier="orr" tags="Cyberpunk PC" title="HK">
 <pre>Played by Hannah King.
@@ -12542,7 +12681,7 @@ They also wouldn't say no to making a few more tentacled friends from their new 
 <div created="20210117214056232" creator="orr" modified="20210117214405711" modifier="orr" tags="Cyberpunk Missions" title="The Braindance Gambit">
 <pre>An adventure featuring [[Mix]]. [[Don]], [[Silver Shot]], [[Bloodmoon]].</pre>
 </div>
-<div created="20210117190807274" creator="orr" modified="20210117213340738" modifier="orr" tags="Cyberpunk Missions" title="The Chemical Heist">
+<div created="20210117190807274" creator="orr" modified="20210117221422408" modifier="orr" tags="Cyberpunk Missions" title="The Chemical Heist">
 <pre>An adventure featuring [[Lexa]], [[Ace]], [[JMG]] and [[HK]]. </pre>
 </div>
 <div created="20200125152105770" modified="20210117165104166" modifier="orr" tags=".sidebyside tb meta Cyberpunk" title="TiddlyBlink">
