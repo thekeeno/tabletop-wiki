@@ -307,7 +307,19 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/bodylineheight</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/fontsize</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/lineheight</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth</li>
+
 <li>$:/themes/tiddlywiki/vanilla/options/sidebarlayout</li>
+
+<li>$:/themes/tiddlywiki/vanilla/options/stickytitles</li>
 
 <li>$:/view</li>
 
@@ -362,6 +374,8 @@ Error message and password prompt
 <li>Nico Marinetti</li>
 
 <li>Paul Amsel</li>
+
+<li>Restoring Search Results In Context</li>
 
 <li>Romana</li>
 
@@ -670,18 +684,10 @@ Click here: {{$:/core/ui/Buttons/palette}}
 
 &lt;/span&gt;</pre>
 </div>
-<div caption="search results in context" created="20200102141715979" creator="orr" modified="20210117170512951" modifier="orr" tags="refs tb" title="$:/.giffmex/ViewTemplate/refscontext">
-<pre>\define mycrit() (?i)\b$(searchspx)$\b
-
-&lt;hr&gt;References: 
-
-&lt;$vars searchme=&lt;&lt;currentTiddler&gt;&gt; searchspx={{{ [&lt;currentTiddler&gt;escaperegexp[]]}}} &gt;
-
-&lt;$list filter=&quot;[!is[system]all[current]backlinks[]!tag[outlines]!tag[hide]sort[title]] -[is[current]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;span class=&quot;indent1&quot;&gt;&lt;$link&gt;&lt;span class=&quot;graybox&quot;&gt;&lt;$context term=&lt;&lt;searchme&gt;&gt; /&gt;&lt;/span&gt;&lt;/$link&gt;&lt;/span&gt;&lt;/$list&gt;
-&lt;/$vars&gt;
-</pre>
+<div caption="no references" created="20200102141715979" creator="orr" modified="20210117173408874" modifier="orr" tags="refs tb $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refscontext">
+<pre></pre>
 </div>
-<div caption="links" created="20200126143031898" creator="orr" modified="20210117170600208" modifier="orr" tags="refs tb $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refslinks">
+<div caption="links" created="20200126143031898" creator="orr" modified="20210117173408872" modifier="orr" tags="refs tb" title="$:/.giffmex/ViewTemplate/refslinks">
 <pre>\define mycrit() (?i)\b$(searchspx)$\b
 
 &lt;hr&gt;References: 
@@ -691,7 +697,7 @@ Click here: {{$:/core/ui/Buttons/palette}}
 &lt;$list filter=&quot;[!is[system]all[current]backlinks[]!tag[hide]sort[title]] -[is[current]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;br&gt;&lt;/$list&gt;
 &lt;/$vars&gt;</pre>
 </div>
-<div caption="simple transclusion" created="20200126142157739" creator="orr" modified="20210117170509310" modifier="orr" tags="refs tb" title="$:/.giffmex/ViewTemplate/refstranscludeclean">
+<div caption="simple transclusion" created="20200126142157739" creator="orr" modified="20210117173407136" modifier="orr" tags="refs tb" title="$:/.giffmex/ViewTemplate/refstranscludeclean">
 <pre>&lt;hr&gt;
 
 References: &lt;br&gt;
@@ -11885,8 +11891,8 @@ exports.context = contextWidget;
 <div created="20210117131849575" creator="orr" modified="20210117131849576" modifier="orr" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20210117135916508" creator="orr" modified="20210117172807685" modifier="orr" title="$:/state/tab--1963855381">
-<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
+<div created="20210117135916508" creator="orr" modified="20210117173147101" modifier="orr" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
 <div created="20210117123058248" creator="orr" modified="20210117164548434" modifier="orr" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
@@ -11900,8 +11906,8 @@ exports.context = contextWidget;
 <div created="20210117171056161" creator="orr" modified="20210117171057346" modifier="orr" title="$:/state/tab/search-results/sidebar">
 <pre>$:/core/ui/DefaultSearchResultList</pre>
 </div>
-<div created="20210117123652517" creator="orr" modified="20210117171115473" modifier="orr" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20210117123652517" creator="orr" modified="20210117173204316" modifier="orr" title="$:/state/tab/sidebar--595412856">
+<pre>$:/.giffmex/sidebar/tabs/tiddlyblinkcontrols</pre>
 </div>
 <div created="20210117164605158" creator="orr" modified="20210117171043085" modifier="orr" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -11912,7 +11918,7 @@ exports.context = contextWidget;
 <div created="20210117131817587" creator="p" modified="20210117131819154" modifier="or" title="$:/status/UserName">
 <pre>orr</pre>
 </div>
-<div created="20210117164545195" creator="orr" list="[[Arasaka Train 1024]] [[Grunt: Arasaka Train Drone (Pistol)]] [[Grunt: Arasaka Train Drone (Rifle)]]" modified="20210117172803481" modifier="orr" title="$:/StoryList">
+<div created="20210117164545195" creator="orr" list="[[Grunt: Arasaka Train Drone (Rifle)]]" modified="20210117173354345" modifier="orr" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200304200339220" tags="tb" title="$:/tags/EditToolbar">
@@ -12039,10 +12045,28 @@ exports.context = contextWidget;
     }
 }</pre>
 </div>
-<div created="20200127172539001" creator="orr" modified="20210117172811458" modifier="orr" tags="tb" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
+<div created="20210117173101035" creator="orr" modified="20210117173124035" modifier="orr" title="$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize">
+<pre>13.5px</pre>
+</div>
+<div created="20210117173030612" creator="orr" modified="20210117173119116" modifier="orr" title="$:/themes/tiddlywiki/vanilla/metrics/bodylineheight">
+<pre>19px</pre>
+</div>
+<div created="20210117172945539" creator="orr" modified="20210117172958564" modifier="orr" title="$:/themes/tiddlywiki/vanilla/metrics/fontsize">
+<pre>14px</pre>
+</div>
+<div created="20210117173019219" creator="orr" modified="20210117173027137" modifier="orr" title="$:/themes/tiddlywiki/vanilla/metrics/lineheight">
+<pre>16px</pre>
+</div>
+<div created="20210117173012154" creator="orr" modified="20210117173012408" modifier="orr" title="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth">
+<pre>300px</pre>
+</div>
+<div created="20200127172539001" creator="orr" modified="20210117172915537" modifier="orr" tags="tb" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fluid-fixed</pre>
 </div>
-<div created="20200127165334843" creator="orr" modified="20210117164550393" modifier="orr" tags="tb" title="$:/view">
+<div created="20210117172920741" creator="orr" modified="20210117172935779" modifier="orr" title="$:/themes/tiddlywiki/vanilla/options/stickytitles">
+<pre>no</pre>
+</div>
+<div created="20200127165334843" creator="orr" modified="20210117173053523" modifier="orr" tags="tb" title="$:/view">
 <pre>classic</pre>
 </div>
 <div created="20210117133322853" creator="orr" modified="20210117165104141" modifier="orr" tags="Journal Cyberpunk" title="17th January 2021">
@@ -12321,7 +12345,7 @@ Rifle Ammo x30
 
 Mesh Network: If another drone has eyes on a target, you get +2 on all Ranged Weapon attacks. This bonus does not stack.</pre>
 </div>
-<div created="20210117163102583" creator="orr" modified="20210117171758729" modifier="orr" tags="Grunt Cyberpunk" title="Grunt: Bodyguard">
+<div created="20210117163102583" creator="orr" modified="20210117173150391" modifier="orr" tags="Grunt Cyberpunk" title="Grunt: Bodyguard">
 <pre>|INT|REF|DEX|TECH|COOL|WILL|LUCK|MOVE|BODY|EMP|
 |3|6|5|2|4|4|-|4|6|3|
 
@@ -12337,7 +12361,7 @@ Mesh Network: If another drone has eyes on a target, you get +2 on all Ranged We
 |Poor Quality Shotgun|5d6|1|
 |Very Heavy Pistol|4d6|2|
 
-!!! Skills
+!!! Skill Bases
 
 Athletics 9, Brawling 11, Concentration 6, Conversation 5, Drive Land Vehicle 10, Education 5, Endurance 9, Evasion 7, First Aid 4, Handgun 10, Human Perception 5, Interrogation 6, Language (Native) 5, Language (Streetslang) 5, Local Expert (Your Home) 5, Perception 9, Persuasion 6, Resist Torture/Drug 8, Shoulder Arms 10, Stealth 7
 
@@ -12379,6 +12403,17 @@ Paul is here to get paid and move on. Treats the party like a hassle - they're j
 
 His car - basically a hovering Volvo 240 with some serious speed behind it. Boxy but capacious. 
 [img[./img/paul-amsel-car.jpg]]</pre>
+</div>
+<div created="20210117173213258" creator="orr" modified="20210117173256658" modifier="orr" tags="" title="Restoring Search Results In Context">
+<pre>\define mycrit() (?i)\b$(searchspx)$\b
+
+&lt;hr&gt;References: 
+
+&lt;$vars searchme=&lt;&lt;currentTiddler&gt;&gt; searchspx={{{ [&lt;currentTiddler&gt;escaperegexp[]]}}} &gt;
+
+&lt;$list filter=&quot;[!is[system]all[current]backlinks[]!tag[outlines]!tag[hide]sort[title]] -[is[current]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;span class=&quot;indent1&quot;&gt;&lt;$link&gt;&lt;span class=&quot;graybox&quot;&gt;&lt;$context term=&lt;&lt;searchme&gt;&gt; /&gt;&lt;/span&gt;&lt;/$link&gt;&lt;/span&gt;&lt;/$list&gt;
+&lt;/$vars&gt;
+</pre>
 </div>
 <div created="20210117122957739" creator="orr" modified="20210117165915928" modifier="orr" tags="Brescia D&amp;D PC" title="Romana">
 <pre></pre>
