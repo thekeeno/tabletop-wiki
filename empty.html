@@ -271,6 +271,8 @@ Error message and password prompt
 
 <li>$:/state/search/currentTab</li>
 
+<li>$:/state/sidebar</li>
+
 <li>$:/state/tab--1498284803</li>
 
 <li>$:/state/tab--1963855381</li>
@@ -414,6 +416,10 @@ Error message and password prompt
 <li>Rules: Autofire</li>
 
 <li>Rules: Ranged DV Table</li>
+
+<li>Rules: Ranged Weapons</li>
+
+<li>Rules: Suppressive Fire</li>
 
 <li>The Braindance Gambit</li>
 
@@ -720,10 +726,10 @@ Click here: {{$:/core/ui/Buttons/palette}}
 
 &lt;/span&gt;</pre>
 </div>
-<div caption="no references" created="20200102141715979" creator="orr" modified="20210117185553833" modifier="orr" tags="refs tb $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refscontext">
+<div caption="no references" created="20200102141715979" creator="orr" modified="20210117224634533" modifier="orr" tags="refs tb $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refscontext">
 <pre></pre>
 </div>
-<div caption="links" created="20200126143031898" creator="orr" modified="20210117185553832" modifier="orr" tags="refs tb" title="$:/.giffmex/ViewTemplate/refslinks">
+<div caption="links" created="20200126143031898" creator="orr" modified="20210117224634532" modifier="orr" tags="refs tb" title="$:/.giffmex/ViewTemplate/refslinks">
 <pre>\define mycrit() (?i)\b$(searchspx)$\b
 
 &lt;hr&gt;References: 
@@ -11923,6 +11929,9 @@ exports.context = contextWidget;
 <div created="20210117171056160" creator="orr" modified="20210117171057344" modifier="orr" title="$:/state/search/currentTab">
 <pre>$:/core/ui/DefaultSearchResultList</pre>
 </div>
+<div created="20210117224420216" creator="orr" modified="20210117224445210" modifier="orr" title="$:/state/sidebar">
+<pre>yes</pre>
+</div>
 <div created="20210117131849575" creator="orr" modified="20210117131849576" modifier="orr" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
@@ -11941,8 +11950,8 @@ exports.context = contextWidget;
 <div created="20210117171056161" creator="orr" modified="20210117171057346" modifier="orr" title="$:/state/tab/search-results/sidebar">
 <pre>$:/core/ui/DefaultSearchResultList</pre>
 </div>
-<div created="20210117123652517" creator="orr" modified="20210117215243584" modifier="orr" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20210117123652517" creator="orr" modified="20210117224506866" modifier="orr" title="$:/state/tab/sidebar--595412856">
+<pre>$:/.giffmex/sidebar/tabs/tiddlyblinkcontrols</pre>
 </div>
 <div created="20210117164605158" creator="orr" modified="20210117171043085" modifier="orr" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -11953,7 +11962,7 @@ exports.context = contextWidget;
 <div created="20210117131817587" creator="p" modified="20210117131819154" modifier="or" title="$:/status/UserName">
 <pre>orr</pre>
 </div>
-<div created="20210117215247878" creator="orr" list="[[Cyberpunk Red Grunts]]" modified="20210117222100752" modifier="orr" title="$:/StoryList">
+<div created="20210117215247878" creator="orr" list="" modified="20210117224612668" modifier="orr" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200304200339220" tags="tb" title="$:/tags/EditToolbar">
@@ -12665,10 +12674,14 @@ They also wouldn't say no to making a few more tentacled friends from their new 
 <div created="20210117165429794" creator="orr" modified="20210117165527620" modifier="orr" tags="Brescia D&amp;D Journal" title="Romana Log 09-01-2021">
 <pre>They ventured down into the depths to defeat the merfolk cult. They found the remants of the [[Burning Crow]] and a salt-encrusted book and alf the crewsgold earrings. On their way out they murdered a baby merfolk. On their way back from the merfolk cult, they received the gift of an inky pal from their patron. Parking the stolen ship back in port with no issue, the headed down to club???. THere they watched Donk fight a dwarf, and then Gianna got attacked.</pre>
 </div>
-<div created="20210117174247644" creator="orr" modified="20210117174503226" modifier="orr" tags="Cyberpunk [[Cyberpunk Red]] FNFF Rules" title="Rules: Autofire">
-<pre>In Cyberpunk RED, Autofire has been reworked for speed of play. Instead of directly modeling individual bullets, we've moved to modeling patterns of bullets. Being skilled at keeping an automatic gun on target allows you to bring out the best in Autofire. When you use Autofire, it costs an Action and 10 bullets. If you don't have 10 bullets remaining in your clip, you can't use Autofire. You use the Autofire Skill instead of the weapon's typical Weapon Skill. Additionally, instead of the weapon's entry on the [[Range Table|Rules: Ranged DV Table]], you use its entry on the Autofire Range Table. Autofire cannot be used to make an Aimed Shot. Targets with REF 8 or Higher can still choose to attempt to dodge your Autofire. If you hit, roll 2d6 for damage, and multiply it by the amount you beat the DV to hit your target, up to a maximum denoted by the weapon's Autofire (3 for SMGS, 4 for Assault Rifles). This number is the amount of damage that Autofire dealt. If both dice came up 6, you've also inflicted a Critical Injury (see pg. 187)! The Defender's armor reduces the damage you do as normal.</pre>
+<div created="20210117174247644" creator="orr" modified="20210117224214492" modifier="orr" tags="Cyberpunk [[Cyberpunk Red]] FNFF Rules" title="Rules: Autofire">
+<pre>In Cyberpunk RED, Autofire has been reworked for speed of play. Instead of directly modeling individual bullets, we've moved to modeling patterns of bullets. Being skilled at keeping an automatic gun on target allows you to bring out the best in Autofire. When you use Autofire, it costs an Action and 10 bullets. If you don't have 10 bullets remaining in your clip, you can't use Autofire. You use the Autofire Skill instead of the weapon's typical Weapon Skill. Additionally, instead of the weapon's entry on the [[Range Table|Rules: Ranged DV Table]], you use its entry on the Autofire Range Table. Autofire cannot be used to make an Aimed Shot. Targets with REF 8 or Higher can still choose to attempt to dodge your Autofire. If you hit, roll 2d6 for damage, and multiply it by the amount you beat the DV to hit your target, up to a maximum denoted by the weapon's Autofire (3 for SMGS, 4 for Assault Rifles). This number is the amount of damage that Autofire dealt. If both dice came up 6, you've also inflicted a Critical Injury (see pg. 187)! The Defender's armor reduces the damage you do as normal.
+
+|Weapon Type|0-6m|7-12m|13-25m|25-50m|51-100m|
+|SMG|20|17|20|25|30|
+|Assault Rifle|22|20|17|20|25|</pre>
 </div>
-<div created="20210117173708726" creator="orr" modified="20210117174229699" modifier="orr" tags="Cyberpunk Rules FNFF [[Cyberpunk Red]]" title="Rules: Ranged DV Table">
+<div created="20210117173708726" creator="orr" modified="20210117224138397" modifier="orr" tags="Cyberpunk Rules FNFF [[Cyberpunk Red]]" title="Rules: Ranged DV Table">
 <pre>|Weapon Type|0-6m|7-12m|13-25m|25-50m|51-100m|101-200m|201-400m|401-800m|
 |Pistol|13|15|20|25|30|30|N/A|N/A|
 |SMG|15|13|15|20|25|25|30|N/A|
@@ -12676,7 +12689,29 @@ They also wouldn't say no to making a few more tentacled friends from their new 
 |Assault Rifle|17|16|15|13|15|20|25|30|
 |Sniper Rifle|30|25|25|20|15|16|17|20|
 |Bows|15|13|15|17|20|22|N/A|N/A|
-</pre>
+|Grenade Launcher|16|15|15|17|20|22|25|N/A|
+|Rocket Launcher|17|16|15|15|20|20|25|30|</pre>
+</div>
+<div created="20210117222724948" creator="orr" modified="20210117224421504" modifier="orr" tags="Cyberpunk [[Cyberpunk Red]] Rules FNFF" title="Rules: Ranged Weapons">
+<pre>|Weapon Type|Weapon Skill|Damage|Magazine|ROF|Hands|Concealable?|Cost|Additional Features|
+|Medium Pistol|Handgun|2d6|12|2|1|Yes|50eb|N/A|
+|Heavy Pistol|Handgun|3d6|8|2|1|Yes|100eb|N/A|
+|Very Heavy Pistol|Handgun|4d6|8|1|1|No|100eb|N/A|
+|SMG|Handgun|2d6|30|1|1|Yes|100eb|[[Autofire|Rules: Autofire]] (3), [[Suppressive Fire|Rules: Suppressive Fire]]|
+|Heavy SMG|Handgun|3d6|40|1|1|No|100eb|[[Autofire|Rules: Autofire]] (3),  [[Suppressive Fire|Rules: Suppressive Fire]]|
+|Shotgun|Shoulder Arms|5d6|4|1|2|No|500eb|Shotgun Shell|
+|Assault Rifle|Shoulder Arms|5d6|25|1|2|No|500eb|[[Autofire|Rules: Autofire]] (4),  [[Suppressive Fire|Rules: Suppressive Fire]]|
+|Sniper Rifle|Shoulder Arms|5d6|4|1|2|No|500eb|N/A|
+|Crossbow|Archery|4d6|0|1|2|No|100eb|Arrows|
+|Grenade Launcher|Heavy Weapons|6d6|2|1|2|No|500eb|Explosive|
+|Rocket Launcher|Heavy Weapons|8d6|1|1|2|No|500eb|Explosive|
+
+
+When firing a ranged weapon, use the [[Ranged DV Table|Rules: Ranged DV Table]].</pre>
+</div>
+<div created="20210117224238027" creator="orr" modified="20210117224321866" modifier="orr" tags="Cyberpunk [[Cyberpunk Red]] FNFF Rules" title="Rules: Suppressive Fire">
+<pre>When you use Suppressive Fire, it costs an Action and 10 Bullets. If you don't have 10 Bullets remaining in your clip, you can't use Suppressive Fire.
+Everyone on foot within 25 m/yds, out of cover, and in your line of sight must roll WILL + Concentration + 1d10 against your REF + Autofire Skill + 1d10. Anyone that fails must use their next Move Action to get into cover. If that Move Action would be insufficient to get into cover, they must also use the Run Action to get into cover or as close to cover as possible.</pre>
 </div>
 <div created="20210117214056232" creator="orr" modified="20210117214405711" modifier="orr" tags="Cyberpunk Missions" title="The Braindance Gambit">
 <pre>An adventure featuring [[Mix]]. [[Don]], [[Silver Shot]], [[Bloodmoon]].</pre>
