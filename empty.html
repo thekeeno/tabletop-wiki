@@ -421,6 +421,8 @@ Error message and password prompt
 
 <li>Romana Backstory</li>
 
+<li>Romana Log</li>
+
 <li>Romana Log 2021-01-09</li>
 
 <li>Romana Log 2021-01-18</li>
@@ -11981,7 +11983,7 @@ exports.context = contextWidget;
 <div created="20210117131817587" creator="p" modified="20210117131819154" modifier="or" title="$:/status/UserName">
 <pre>orr</pre>
 </div>
-<div created="20210118205119766" creator="orr" list="" modified="20210118205119766" modifier="orr" title="$:/StoryList">
+<div created="20210118205119766" creator="orr" list="Romana" modified="20210118210500291" modifier="orr" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200304200339220" tags="tb" title="$:/tags/EditToolbar">
@@ -12593,7 +12595,7 @@ Neural Link (Interface Plugs)
 
 VH Pistol Ammo x20, Arrow Ammo x20, Rope, Flashlight</pre>
 </div>
-<div created="20210118131040301" creator="orr" modified="20210118204953541" modifier="orr" tags="Grunt Cyberpunk Lieutenant" title="Grunt: Security Officer">
+<div created="20210118131040301" creator="orr" modified="20210118205329706" modifier="orr" tags="Grunt Cyberpunk Lieutenant" title="Grunt: Security Officer">
 <pre>|INT|REF|DEX|TECH|COOL|WILL|LUCK|MOVE|BODY|EMP|
 |4|8(6)|6(4)|4|6||5|-|6(4)|7|4|
 
@@ -12601,7 +12603,7 @@ VH Pistol Ammo x20, Arrow Ammo x20, Rope, Flashlight</pre>
 |Seriously Wounded|20|
 |Death Save|7|
 
-|MediumArmorjack|&lt;|
+|Medium Armorjack|&lt;|
 |Head|SP13|
 |Body|SP13|
 
@@ -12743,8 +12745,18 @@ His car - basically a hovering Volvo 240 with some serious speed behind it. Boxy
 &lt;/$vars&gt;
 </pre>
 </div>
-<div created="20210117122957739" creator="orr" modified="20210117165915928" modifier="orr" tags="Brescia D&amp;D PC" title="Romana">
-<pre></pre>
+<div created="20210117122957739" creator="orr" modified="20210118210430170" modifier="orr" tags="Brescia D&amp;D PC" title="Romana">
+<pre>! Log
+
+{{Romana Log}}
+
+
+
+
+
+
+
+</pre>
 </div>
 <div created="20210117165214149" creator="orr" modified="20210117165639852" modifier="orr" tags="Journal D&amp;D Brescia" title="Romana Backstory">
 <pre>Romana was always underappreciated. Born to two trader parents, they were quite quickly usurped by their sister xx, who soon became the favorite child. While xx succeeded and rose up, Romana had to deal with the scraps. Over time, they turned to occasional misdeeds to prop themself up - the odd bit of smuggling here, a little racket there. To begin with, romana kept their illicit activities secret, mainly for smuggling coin just for themselves on board legitimate vessels. As theirname gained legitimacy and notoriety amongst the shadier folks on the waves, they were picked by a [[Captain Asha]], a solemn but charismatic man from across the sea, who was running what seemed to be a protection racket. After a few months on the crew of the burning crow (his ship), however, they began to suspect there was more pattern to his targets than he would have others know - there always seemed to be one box or ledger in particular from each ship theymenaced that never made the transition from loot to gold, and ended stashed away in his cabin. On what turned out to be one of their final victories on that ship, they took on some surly captives- a grumbling old bugbear named Yanti, who despite his sour mouth had the best eye for the stars you had ever seen, and young woman named Aman, who made it her mission to be as amiable as possible on board the ship, but with a friendliness that never made it to her eyes. With the last of whatever Asha was looking for, the [[Burning Crow]] set sail for a shore you'd never seen. Never the most diligent, you didnt keep track of how many days you'd travelled, but Yanti was often up the mast, squinting at stars and taking notes. Until the fateful night, waking with a smell of acrid smoke in your nose, you rushed to the deck to see Asha, his first mate and some other stalwarts of the crew deep in intense conversation. They turned to look at the sound of your feet on the boards, and that's when the world exploded. Instantly flung from the ship, you plunged into the depths, surrounded by wooden shrapnel, and less pleasant, more organic flotsam. When a ship sinks, it's not just the cold and exposure that kills the crew that jump at the last minute - the huge mass of the sinking wreckage falling through the water pulls its disloyal crew after it it as a final piece of spite, and maybe that's why Romana, flung by the explosion rather than abandoning ship, was saved in the tentacles of a kraken, wrapped round every inch of their body, searching for something....? And eventually, after an unknowable passage of time, releasing them to ride the gentle waves in to new shore and a new start
@@ -12762,14 +12774,21 @@ They also wouldn't say no to making a few more tentacled friends from their new 
 
 </pre>
 </div>
+<div created="20210118210203609" creator="orr" modified="20210118210451014" modifier="orr" tags="Brescia D&amp;D Journal" title="Romana Log">
+<pre>&lt;$list filter=&quot;[tag[Romana Log]]&quot;&gt;
+&lt;h2&gt;&lt;$link&gt;&lt;$transclude field=&quot;title&quot; mode=&quot;block&quot;/&gt;&lt;/$link&gt;&lt;/h2&gt;
+&lt;$transclude field=&quot;text&quot; mode=&quot;block&quot;/&gt;
+&lt;hr/&gt;
+&lt;/$list&gt;</pre>
+</div>
 <div created="20210117165429794" creator="orr" modified="20210118195026416" modifier="orr" tags="Brescia D&amp;D Journal [[Romana Log]]" title="Romana Log 2021-01-09">
 <pre>They ventured down into the depths to defeat the merfolk cult. They found the remants of the [[Burning Crow]] and a salt-encrusted book and alf the crewsgold earrings. On their way out they murdered a baby merfolk. On their way back from the merfolk cult, they received the gift of an inky pal from their patron. Parking the stolen ship back in port with no issue, the headed down to club???. THere they watched Donk fight a dwarf, and then Gianna got attacked.</pre>
 </div>
-<div created="20210118193017311" creator="orr" modified="20210118203304308" modifier="orr" tags="Journal Brescia D&amp;D [[Romana Log]]" title="Romana Log 2021-01-18">
+<div created="20210118193017311" creator="orr" modified="20210118210317531" modifier="orr" tags="Journal Brescia D&amp;D [[Romana Log]]" title="Romana Log 2021-01-18">
 <pre>The party moved to engage Jennifer. Gianna gets fuckin blasted. Romana and [[Donk]] clear the crowd out the way with Gust of Wind and intimidation, and Octavian sneaks into the fray. Octavian slaps Jennifer while Romana blasts her. Meanwihle Jennifer gives the crowd's HP some succ. Gianna also gets rekt with a load of crossbow bolts. Octavian deals the finishing blow with the help of some blessing and bardic inspiration.
 
 Donk met Kasimir who knows his mum? 
-[[Hagar]] roasts Donk for accidentall hurting Lucian and then consoles him.</pre>
+[[Hagar]] roasts Donk for accidentally hurting Lucian and then consoles him.</pre>
 </div>
 <div created="20210117174247644" creator="orr" modified="20210117224214492" modifier="orr" tags="Cyberpunk [[Cyberpunk Red]] FNFF Rules" title="Rules: Autofire">
 <pre>In Cyberpunk RED, Autofire has been reworked for speed of play. Instead of directly modeling individual bullets, we've moved to modeling patterns of bullets. Being skilled at keeping an automatic gun on target allows you to bring out the best in Autofire. When you use Autofire, it costs an Action and 10 bullets. If you don't have 10 bullets remaining in your clip, you can't use Autofire. You use the Autofire Skill instead of the weapon's typical Weapon Skill. Additionally, instead of the weapon's entry on the [[Range Table|Rules: Ranged DV Table]], you use its entry on the Autofire Range Table. Autofire cannot be used to make an Aimed Shot. Targets with REF 8 or Higher can still choose to attempt to dodge your Autofire. If you hit, roll 2d6 for damage, and multiply it by the amount you beat the DV to hit your target, up to a maximum denoted by the weapon's Autofire (3 for SMGS, 4 for Assault Rifles). This number is the amount of damage that Autofire dealt. If both dice came up 6, you've also inflicted a Critical Injury (see pg. 187)! The Defender's armor reduces the damage you do as normal.
